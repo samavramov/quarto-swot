@@ -1,0 +1,85 @@
+---
+title: "Trello vs Airtable"
+author: "Sam Avramov"
+date: 2026-10-27
+format:
+  html:
+    toc: false
+    theme: default
+    embed-resources: true
+    margin-left: 0.75in
+    margin-right: 0.75in
+    margin-top: 0.75in
+    margin-bottom: 0.75in
+    other-links:
+      - text: Download PDF
+        href: index.pdf
+      - text: Download Word Document
+        href: index.docx
+  pdf:
+    toc: false
+    pdf-engine: xelatex
+    latex-auto-install: false
+    documentclass: article
+    fontsize: 11pt
+    geometry:
+      - top=0.75in
+      - bottom=0.75in
+      - left=0.75in
+      - right=0.75in
+    include-in-header:
+      text: |
+        \renewcommand{\maketitle}{}
+        \makeatletter
+        \newcommand{\thetitle}{\@title}
+        \newcommand{\theauthor}{\@author}
+        \newcommand{\thedate}{\@date}
+        \renewcommand{\section}{\@startsection{section}{1}{0pt}{0.5em}{0.25em}{\normalfont\Large\bfseries}}
+        \renewcommand{\subsection}{\@startsection{subsection}{2}{0pt}{0.5em}{0.25em}{\normalfont\large\bfseries}}
+        \renewcommand{\subsubsection}{\@startsection{subsubsection}{3}{0pt}{0.5em}{0.25em}{\normalfont\normalsize\bfseries}}
+        \makeatother
+    include-before-body:
+      text: |
+        \noindent{\Large\bfseries\thetitle}\par
+        \vspace{0.25em}
+        \noindent\theauthor\hfill\thedate\par
+        \vspace{0.5em}
+        \noindent\rule{\textwidth}{0.4pt}
+        \vspace{0.5em}
+  docx:
+    toc: false
+    reference-doc: reference.docx
+bibliography: references.bib
+---
+
+## Analytical or Research Question
+
+Should a student research team use Trello or Airtable to coordinate a semester project on a minimal budget?
+
+## Answer, Response, and Summary of Results
+
+**Recommendation:** I recommend **Trello** because the immediate need is a small planning software with a low cost.
+
+### Trello SWOT
+
+- **Strengths:** Trello gives visual boards, assigned members, and due dates support task tracking. The free plan would fit this five-person team [@trello-pricing].
+- **Weaknesses:** Organizing relationships between tasks, articles, and datasets is less straightforward than in Airtable.
+- **Opportunities:** A continuing project could use Trello in a future semster
+- **Threats:** Students may stop updating cards which can leave the others with inaccurate progress information.
+
+### Airtable SWOT
+
+- **Strengths:** Linked records can connect tasks, articles, and datasets in a shared research catalog [@airtable-links].
+- **Weaknesses:** Designing tables takes time, and the free plan has a five editor limit which can be problematic [@airtable-plans].
+- **Opportunities:** A continuing research project could reuse the catalog when new students join next semester.
+- **Threats:** Team growth or future pricing changes could make Airtable unaffordable for the team.
+
+## Remaining Questions and Uncertainties
+
+The team size and workflow are assumptions.
+Further information on the duties of the project would also be helpful.
+
+## References {.unnumbered}
+
+::: {#refs}
+:::
